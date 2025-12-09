@@ -1,25 +1,18 @@
-// calculadora.test.js
-const { sumar, restar, multiplicar, dividir } = require('./calculadora');
+function sumar(a, b) {
+    return a + b;
+}
 
-describe('Pruebas de la Calculadora', () => {
-    test('Debe sumar dos números reales correctamente', () => {
-        expect(sumar(2, 2)).toBe(4);
-        expect(sumar(5.5, 2.1)).toBe(7.6);
-    });
+function restar(a, b) {
+    return a - b;
+}
 
-    test('Debe restar dos números reales correctamente', () => {
-        expect(restar(5, 2)).toBe(3);
-        expect(restar(2, 5)).toBe(-3);
-    });
+function multiplicar(a, b) {
+    return a * b;
+}
 
-    test('Debe multiplicar dos números reales correctamente', () => {
-        expect(multiplicar(4, 2)).toBe(8);
-        expect(multiplicar(2.5, 2)).toBe(5);
-    });
+function dividir(a, b) {
+    return a / b;
+}
 
-    test('Debe dividir dos números reales correctamente', () => {
-        expect(dividir(10, 2)).toBe(5);
-        expect(dividir(10, 4)).toBe(2.5);
-    });
-});  
-//comentarios. equipo??
+// Exportamos todas las funciones para que el test pueda usarlas
+module.exports = { sumar, restar, multiplicar, dividir };
