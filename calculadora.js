@@ -21,4 +21,5 @@ describe('Pruebas de la Calculadora', () => {
         expect(dividir(10, 2)).toBe(5);
         expect(dividir(10, 4)).toBe(2.5);
     });
-});
+});  
+//comentarios. equipo??
